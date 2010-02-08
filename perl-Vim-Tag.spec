@@ -1,5 +1,5 @@
 %define upstream_name    Vim-Tag
-%define upstream_version 0.03
+%define upstream_version 0.04
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -14,9 +14,12 @@ Source0:    http://www.cpan.org/modules/by-module/Vim/%{upstream_name}-%{upstrea
 BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(File::Find::Upwards)
 BuildRequires: perl(Getopt::Attribute)
+BuildRequires: perl(Getopt::Inherited)
+BuildRequires: perl(Hash::Rename)
 BuildRequires: perl(Test::Compile)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(UNIVERSAL::require)
+
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
@@ -29,11 +32,10 @@ bash programmable completion project. See the synopsis.
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-
-%{make}
+%make
 
 %check
-%{make} test
+%make test
 
 %install
 rm -rf %buildroot
