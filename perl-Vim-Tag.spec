@@ -11,6 +11,7 @@ Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Vim/%{upstream_name}-%{upstream_version}.tar.gz
 
+BuildRequires: perl(Class::Accessor::Constructor)
 BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(File::Find::Upwards)
 BuildRequires: perl(Getopt::Attribute)
@@ -19,6 +20,7 @@ BuildRequires: perl(Hash::Rename)
 BuildRequires: perl(Test::Compile)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(UNIVERSAL::require)
+BuildRequires: perl(URI::Escape)
 
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
