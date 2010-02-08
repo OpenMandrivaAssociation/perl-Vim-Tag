@@ -51,4 +51,4 @@ rm -rf %buildroot
 %doc Changes README
 %{_mandir}/man3/*
 %perl_vendorlib/*
-%{_bindir}/ptags*
+%{_bindir}/ptag*
