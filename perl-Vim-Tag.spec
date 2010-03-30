@@ -1,5 +1,5 @@
 %define upstream_name    Vim-Tag
-%define upstream_version 0.04
+%define upstream_version 1.100880
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
