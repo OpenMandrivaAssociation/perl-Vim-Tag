@@ -1,15 +1,14 @@
 %define upstream_name    Vim-Tag
-%define upstream_version 1.100880
-
+%define upstream_version 1.110690
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%perl_convert_version 1.110690
+Release:	1
 
 Summary:	Generate perl tags for vim
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Vim/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Vim/Vim-Tag-1.110690.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Class::Accessor)
@@ -47,6 +46,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 %files
 %doc Changes README
 %{_mandir}/man3/*
+%{_mandir}/man1/*
 %{perl_vendorlib}/*
 %{_bindir}/ptag*
 
@@ -77,3 +77,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Thu Sep 17 2009 cpan2dist 0.02-1mdv
 - initial mdv release, generated with cpan2dist
+
