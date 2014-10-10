@@ -2,7 +2,7 @@
 %define upstream_version 1.110690
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 1.110690
-Release:	1
+Release:	2
 
 Summary:	Generate perl tags for vim
 License:	GPL+ or Artistic
