@@ -1,14 +1,14 @@
 %define upstream_name    Vim-Tag
 %define upstream_version 1.110690
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 1.110690
-Release:	3
+Version:	%{upstream_version}
+Release:	4
 
 Summary:	Generate perl tags for vim
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Vim/Vim-Tag-1.110690.tar.gz
+Url:		https://github.com/hanekomu/Vim-Tag
+Source0:	https://cpan.metacpan.org/authors/id/M/MA/MARCEL/Vim-Tag-1.110690.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
